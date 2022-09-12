@@ -48,7 +48,6 @@ class GetDiffPoints {
         Graphics2D graphics2D = image.createGraphics();
         graphics2D.setColor(Color.RED);
         graphics2D.drawRect(left - 10, top - 5, width + 20, height + 15);
-//        graphics2D.dispose();
     }
 
     private void findPointsForRectangle(List<Group> groups, BufferedImage image) {
