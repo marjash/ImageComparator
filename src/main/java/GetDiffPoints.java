@@ -35,7 +35,7 @@ class GetDiffPoints {
     private Optional<Group> findGroupForPoint(List<Group> groups, Point point) {
         for (Group group : groups) {
             for (Point p : group) {
-                if (distance(p, point) < 10)
+                if (distance(p, point) < 100)
                     return Optional.of(group);
             }
         }
@@ -52,11 +52,11 @@ class GetDiffPoints {
     }
 
     private void findPointsForRectangle(List<Group> groups, BufferedImage image) {
-        int top = Integer.MAX_VALUE;
-        int left = Integer.MAX_VALUE;
-        int bottom = 0;
-        int right = 0;
         for (Group group : groups) {
+            int top = Integer.MAX_VALUE;
+            int left = Integer.MAX_VALUE;
+            int bottom = 0;
+            int right = 0;
             for (Point point : group) {
                 top = Math.min(point.getY(), top);
                 left = Math.min(point.getX(), left);
