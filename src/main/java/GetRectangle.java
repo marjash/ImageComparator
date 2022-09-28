@@ -10,7 +10,7 @@ import java.util.List;
  * @author Oksana
  */
 @Getter
-class GetRectangle {
+public class GetRectangle {
     /**
      * Get distinct image with rectangle
      * @param imgA The first image to be compared

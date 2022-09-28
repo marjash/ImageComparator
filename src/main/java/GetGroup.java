@@ -9,7 +9,7 @@ import java.util.Optional;
  */
 public class GetGroup {
     /**
-     *
+     *Adds points that are close to the same group
      * @param imgA The first image to be compared
      * @param imgB The second image to be compared
      * @return Return groups of points
